@@ -1,70 +1,81 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
+/* Third Level Menu */
+.third-level-menu {
+  position: absolute;
+  top: 0;
+  right: -150px;
+  width: 150px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
 }
 
-.navbar {
-  overflow: hidden;
-  background-color: #333;
+.third-level-menu > li {
+  height: 30px;
+  background: #FFD6D6; /* Pastel Pink */
 }
 
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.third-level-menu > li:hover {
+  background: #FFB3B3; /* Lighter Pink on Hover */
 }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
+/* Second Level Menu */
+.second-level-menu {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 150px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
 }
 
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
+.second-level-menu > li {
+  position: relative;
+  height: 30px;
+  background: #FFB3E6; /* Pastel Purple */
+}
+
+.second-level-menu > li:hover {
+  background: #FF99D9; /* Lighter Purple on Hover */
+}
+
+/* Top Level Menu */
+.top-level-menu {
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+.top-level-menu > li {
+  position: relative;
+  float: left;
+  height: 30px;
+  width: 100%;
+  background: #FFC3A0; /* Pastel Orange */
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+.top-level-menu > li:hover {
+  background: #FFA080; /* Lighter Orange on Hover */
 }
 
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
+/* Menu Link Styles */
+.top-level-menu a {
+  font: bold 16px 'Arial', sans-serif; /* Larger and sans-serif font */
+  color: #333333; /* Darker text color */
   text-decoration: none;
+  padding: 0 0 0 10px;
   display: block;
-  text-align: left;
+  line-height: 30px;
 }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
+.top-level-menu a:hover {
+  color: #FF6B6B; /* Pink on Hover */
 }
 
 /* Image Styles */
-img
- {
+img {
   width: 350px;
   height: 200px;
   float: right;
@@ -72,8 +83,7 @@ img
 }
 
 /* Header Styles */
-.kopje 
-{
+.kopje {
   font-family: 'Pacifico', cursive; /* A cute, handwritten font */
   background-color: #FFECB3; /* Pastel Yellow */
   color: #E57373; /* Lighter Red Text */
