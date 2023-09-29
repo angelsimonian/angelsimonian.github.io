@@ -60,6 +60,10 @@
   background: #FFA080; /* Lighter Orange on Hover */
 }
 
+.top-level-menu:hover .second-level-menu {
+  display: block;
+}
+
 /* Menu Link Styles */
 .top-level-menu a {
   font: bold 16px 'Arial', sans-serif; /* Larger and sans-serif font */
